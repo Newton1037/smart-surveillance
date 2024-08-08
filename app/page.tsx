@@ -16,6 +16,7 @@ import '@tensorflow/tfjs-backend-webgl'
 import '@tensorflow/tfjs-backend-cpu'
 import { ObjectDetection , DetectedObject } from '@tensorflow-models/coco-ssd'
 import { drawCanvas } from '@/utils/draw'
+import ContactMeLinks from '@/components/contact-links'
 
 type Props = {}
 
@@ -23,6 +24,7 @@ let interval : any = null
 let stopTimeout : any = null
 
 const page = (props: Props) => {
+  
   const webcamRef = useRef<Webcam>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const mediaRecorderRef = useRef<MediaRecorder | null>(null)
@@ -112,7 +114,7 @@ const page = (props: Props) => {
 
     if(!webcamRef.current){
       toast("Camera is not working! Please Refresh")  
-           
+
     }else{
       const imgSrc = webcamRef.current.getScreenshot()
       const img = base64toBlob(imgSrc)
@@ -246,7 +248,7 @@ const page = (props: Props) => {
         <Separator />
         <li className="space-y-4">
           <strong>Share your thoughts 💬 </strong>
-          {/* <SocialMediaLinks/> */}
+          <ContactMeLinks />
           <br />
           <br />
           <br />
