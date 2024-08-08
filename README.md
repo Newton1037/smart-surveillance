@@ -1,3 +1,9 @@
+**Link : https://smart-surveillance-4clc.vercel.app/**
+
+Detecting a person
+![image](https://github.com/user-attachments/assets/8a2b8cd1-7baa-4384-a37a-1b9a7b05f0f2)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
