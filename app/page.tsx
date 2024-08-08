@@ -23,7 +23,7 @@ type Props = {}
 let interval : any = null
 let stopTimeout : any = null
 
-const page = (props: Props) => {
+const Page = (props: Props) => {
   
   const webcamRef = useRef<Webcam>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -108,7 +108,7 @@ const page = (props: Props) => {
      } , 100)
 
      return () => clearInterval(interval)
-  } , [webcamRef.current , model, mirrored, autoRecordEnabled])
+  } , [webcamRef.current , model, mirrored, autoRecordEnabled, runPredictions])
 
   function promptScreenshot(){
 
@@ -352,7 +352,7 @@ const page = (props: Props) => {
   )
 }
 
-export default page
+export default Page
 
 function resizeCanvas(canvasRef : React.RefObject<HTMLCanvasElement> , webcamRef : React.RefObject<Webcam>){
    const canvas = canvasRef.current
