@@ -1,4 +1,4 @@
-****Deployed on Vercel** : https://smart-surveillance-4clc.vercel.app/****
+****Deployed on Vercel** : https://smart-surveillance-4clc.vercel.app/**
 
 Detecting a person
 ![image](https://github.com/user-attachments/assets/8a2b8cd1-7baa-4384-a37a-1b9a7b05f0f2)
